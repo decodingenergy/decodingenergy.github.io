@@ -1,0 +1,154 @@
+.landClass, .absClass {
+    display: none;
+  
+}
+
+.imgs {
+display: none;
+width: 460px;
+height: 420px;
+padding-left: 23px;
+padding-top: 30px;
+}
+
+.row1 {
+  margin-right: -15px;
+  margin-left: -15px;
+
+}
+
+.container {
+  overflow: unset;
+}
+
+.filterDiv {
+  float: left;
+  
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+.show2 {
+  display: block;
+}
+
+
+/* Style the buttons */
+.btn1 {
+  border: #C2C2C2 solid 1px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn1:hover {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+
+/* Add a dark background to the active button */
+.btn1.active2 {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+
+/* Style the buttons */
+.btn2 {
+  border: #C2C2C2 solid 1px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.btn2:hover {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+/* Add a dark background to the active button */
+.btn2.active3 {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+
+/* Style the buttons */
+.btn3 {
+  border: #C2C2C2 solid 1px;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.btn3:hover {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+/* Add a dark background to the active button */
+.btn3.active4 {
+  background: #000000;
+color: #FEE16F;
+text-decoration: none;
+border: #000000 solid 1px;
+}
+
+
+.centerbtn{
+margin: auto;
+width: 21%;
+
+}
+
+.box {
+padding-top : 28px;
+margin: auto;
+width: 26%;
+padding-bottom : 15px;
+}
+
+
+.selcss { 
+width: 200px;
+height:35px;
+border: #000000 solid 1px;
+ background: #fff;
+}
+.selcss2 { 
+width: 200px;
+height:35px;
+border: #000000 solid 1px;
+ background: #fff;
+}
+
+.txt{
+color : #000000;
+font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
