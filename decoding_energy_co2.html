@@ -11,7 +11,6 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="js/df1.js"></script>
 <link href="css/df.css" rel="stylesheet" type="text/css">
@@ -31,7 +30,8 @@
 	<div class="backhead"> 
        </div> 
        <div class="title"> 		 
-        Energy Consumption and Carbon Footprint <br/> of Modern Video Decoding Software
+         
+         Energy Consumption and Carbon Footprint of Modern Video <br/> Decoding Software
        </div>
        
 </div>
@@ -66,7 +66,7 @@
 
 <section id="project">
 <div class="projecttitle">
-   Energy Consumption and Carbon Footprint of Modern Video Decoding Software
+    Energy Consumption and Carbon Footprint of Modern Video Decoding Software
 </div>
 <div class="discription">
 In this project,  we provide a comparative study between five leading video coding standards, namely H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 through their fast software decoder implementation h264, hevc, VVdeC, vp9 and libdav1d, respectively, in terms of energy consumption and CO2 emissions. This study provides a better understanding of the trade-off between energy consumption, bitrate, and quality of different decoders and determines which is the most suitable for developing a green and sustainable video streaming solution.
@@ -92,7 +92,7 @@ In this project,  we provide a comparative study between five leading video codi
           <div class="service_block">
             
             <h3 class="animated fadeInUp wow">1. Original dataset</h3>
-            <p class="animated fadeInDown wow">We selected the JVET-CTC dataset. </p>
+            <p class="animated fadeInDown wow">We selected the JVET-CTC dataset.</p>
           </div>
         </div>
         <div class="col-md-3"> 
@@ -128,14 +128,41 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 </section>
 <!--Service-->  
 
+<!--Service-->  
+
+<section  id="download">
+  <div class="containerdowload">
+  <div class="titledownload">
+   Used Hardware
+  </div>
+  
+  
+   <div  class="titledownload7" > <b> Characteristics of the Used Hardware :</b> The decoding process was performed   on a workstation comprising an Intel(R) Xeon(R) W-2125 with a 4 Core CPU running at 4.00 GHz with four DDR4 RAM modules, each one with a size of 16 GB on Ubuntu 20.04.5 LTS operating system (OS). The processor supports a wide range of \ac{simd}, including SSE4.2, AVX, AVX2, and AVX-512. All five decoders rely heavily on assembly and intrinsic to take advantage of low-level CPU and \ac{simd} instructions (SSE, AVX, AVX-512), which help speed up the decoding process. We used the default configuration of h264, hevc, vp9, and libdav1d decoders provided with the FFmpeg library version 5.2. The proper SSE/AVX optimizations were enabled at run time according to the instructions supported by the CPU. For VVdeC, we also compiled the encoder with the default configuration provided by the project Github through CMake.
+   </div>
+   
+   
+ </div>
+	</div>
+	
+    </div>
+  </div>
+  </div>
+</section>
+ 
+
+
 
 <!--Service-->
 <section  id="download">
+	
+<div class="line">
+  </div>
   <div class="containerdowload">
   <div class="titledownload">
     downlod dataset
   </div>
-   <div  class="titledownload6" >The whole encoded  JVET-CTC dataset can be shared upon request. Please, send an email to taieb.chachou[at]gmail.com with Cc sfezza[at]ensttic.dz.</div>
+   <div  class="titledownload6" >   
+   The whole encoded dataset can be shared upon request. Please, send an email to taieb.chachou[at]gmail.com with Cc sfezza[at]ensttic.dz.</div>
    
  </div>
 	</div>
@@ -156,9 +183,10 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 	  
 	  
     <!-- Title -->
-    <div class="section-title">
-      <h2>Results & analysis</h2> 
-    </div>
+    <div class="titledownload">
+    Results & analysis
+  </div>
+    
     <!--/Title --> 
     
   </div>
@@ -180,56 +208,59 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
     
     <!-- Portfolio Wrapper -->
     <div class = "showresults">
-     
+       
   
 	    
-
- 
-  <div class = "centerbtn", id="myBtnContainer">
+<div class="container box">
+    
+   <div class = "centerbtn", id="myBtnContainer">
  
   <button class="btn1 active2" onclick="filterSelection('dataset_decod')"> Dataset</button>
   <button class="btn1" onclick="filterSelection('resolution_decod')"> Resolution</button>
   <button class="btn1" onclick="filterSelection('class_decod')"> Class</button>
- </div>
 
 
-<div class="container box">
+ 
+ 
+</div>    
+  	
 
-    <div class="filterDiv dataset_decod show">  
-  		 <p class = "txt ">Show results by :  <select class = "selcss">
-  		 <option class = "selcss2"  value="" > --Please choose an option-- </option>
-	    	<option class = "selcss2" value="dec_dataset" >Dataset</option>
-		<option class = "selcss2" value="dec_ArenaOfValor" /> ArenaOfValor<br />
-	    	<option class = "selcss2" value="dec_BQMall" /> BQMall<br />
-	    	<option class = "selcss2" value="dec_BQSquare" /> BQSquare<br />
-	    	<option class = "selcss2" value="dec_BQTerrace" /> BQTerrace<br />
-	    	<option class = "selcss2" value="dec_BasketballDrillText" /> BasketballDrillText<br />
-	    	<option class = "selcss2" value="dec_BasketballDrill" /> BasketballDrill<br />
-	    	<option class = "selcss2" value="dec_BasketballDrive" /> BasketballDrive<br />
-	    	<option class = "selcss2" value="dec_BasketballPass" /> BasketballPass<br />
-	    	<option class = "selcss2" value="dec_BlowingBubbles" /> BlowingBubbles<br />
-	    	<option class = "selcss2" value="dec_Cactus" /> Cactus<br />
-	    	<option class = "selcss2" value="dec_Campfire" /> Campfire<br />
-	    	<option class = "selcss2" value="dec_CatRobot" /> CatRobot<br />
-	    	<option class = "selcss2" value="dec_DaylightRoad2" /> DaylightRoad2<br />
-	    	<option class = "selcss2" value="dec_FoodMarket4" /> FoodMarket4<br />
-	    	<option class = "selcss2" value="dec_FourPeople" /> FourPeople<br />
-	    	<option class = "selcss2" value="dec_KristenAndSara" /> KristenAndSara<br />
-	    	<option class = "selcss2" value="dec_MarketPlace" /> MarketPlace<br />
-	    	<option class = "selcss2" value="dec_ParkRunning3" /> ParkRunning3<br />
-	    	<option class = "selcss2" value="dec_PartyScene" /> PartyScene<br />
-	    	<option class = "selcss2" value="dec_RaceHorses" /> RaceHorses<br />
-	    	<option class = "selcss2" value="dec_RaceHorses_480" /> RaceHorses_480<br />
-	    	<option class = "selcss2" value="dec_RitualDance" /> RitualDance<br />
-	    	<option class = "selcss2" value="dec_SlideEditing" /> SlideEditing<br />
-	    	<option class = "selcss2" value="dec_SlideShow" /> SlideShow<br />
-	    	<option class = "selcss2" value="dec_RaceHorses_480" /> RaceHorses_480<br />
-	    	<option class = "selcss2" value="dec_Tango2" /> Tango2<br />
+  <div class="filterDiv dataset_decod show">  
+  		 <p class = "txt">Show results by :  <select class = "selcss">
+  		 <option value="" > --Please choose an option-- </option>
+	    	<option  value="dec_dataset" >All JVET CTC dataset</option>
+		<option value="dec_ArenaOfValor" /> ArenaOfValor<br />
+	    	<option  value="dec_BQMall" /> BQMall<br />
+	    	<option  value="dec_BQSquare" /> BQSquare<br />
+	    	<option  value="dec_BQTerrace" /> BQTerrace<br />
+	    	<option  value="dec_BasketballDrillText" /> BasketballDrillText<br />
+	    	<option  value="dec_BasketballDrill" /> BasketballDrill<br />
+	    	<option  value="dec_BasketballDrive" /> BasketballDrive<br />
+	    	<option  value="dec_BasketballPass" /> BasketballPass<br />
+	    	<option  value="dec_BlowingBubbles" /> BlowingBubbles<br />
+	    	<option value="dec_Cactus" /> Cactus<br />
+	    	<option  value="dec_Campfire" /> Campfire<br />
+	    	<option  value="dec_CatRobot" /> CatRobot<br />
+	    	<option  value="dec_DaylightRoad2" /> DaylightRoad2<br />
+	    	<option  value="dec_FoodMarket4" /> FoodMarket4<br />
+	    	<option value="dec_FourPeople" /> FourPeople<br />
+	    	<option value="dec_KristenAndSara" /> KristenAndSara<br />
+		<option value="dec_Johnny" /> Johnny<br />
+	    	<option  value="dec_MarketPlace" /> MarketPlace<br />
+	    	<option  value="dec_ParkRunning3" /> ParkRunning3<br />
+	    	<option  value="dec_PartyScene" /> PartyScene<br />
+	    	<option  value="dec_RaceHorses" /> RaceHorses<br />
+	    	<option value="dec_RaceHorses_480" /> RaceHorses_480<br />
+	    	<option  value="dec_RitualDance" /> RitualDance<br />
+	    	<option  value="dec_SlideEditing" /> SlideEditing<br />
+	    	<option value="dec_SlideShow" /> SlideShow<br />
+	    	<option  value="dec_RaceHorses_480" /> RaceHorses_480<br />
+	    	<option  value="dec_Tango2" /> Tango2<br />
 		</select></p></div>
   <div class="filterDiv resolution_decod"> 
   		<p class = "txt">Show results by :  <select  class = "selcss">
   		<option value="" >--Please choose an option--</option>
-	    	<option  value="dec_resolution" >All resolutions</option>
+	    	<option  value="resolution" >All resolutions</option>
 		<option value="dec_416x240" /> 416x240<br />
 	    	<option value="dec_832x480" /> 832x480<br />
 	    	<option value="dec_1280x720" /> 1280x720<br />
@@ -249,12 +280,14 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 	    	<option value="dec_F" /> Class F<br />	    	
 		</select></p></div>
 		
+	
 </div>
 
 
 <!--********************************* decoding results *****************************--> 
 <!--********************************* decoding results *****************************--> 
-  
+<div  class="imgres">
+
 <img src="img/results/decoding_results/decoding_Bar_A1.jpg" class="dec_A1 imgs" />
 <img src="img/results/decoding_results/decoding_Bar_A2.jpg" class="dec_A2 imgs" />
 <img src="img/results/decoding_results/decoding_Bar_B.jpg" class="dec_B imgs" />
@@ -651,12 +684,17 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
 <img src="img/results/decoding_results/decoding_dataset_BD rate (VMAF)_relative_decoding time.jpg" class="dec_dataset imgs" />
     
     
-    
-  </div>
+
+
+</div>
     <!--/Portfolio Wrapper --> 
     
   </div>
-  <!--/Portfolio Filters -->  
+  <!--/Portfolio Filters --> 
+
+<!--fffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssstttttttttttttttttttteeeeeeeerrrrrrrrr--> 
+
+ 
    
   <div class="portfolio_btm"></div>
   
@@ -674,7 +712,7 @@ usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
     <section class="page_section contact" id="contact">
       <div class="contact_section">
         <h2>Contact Us</h2>
-	<h6>If you have any questions about the project, please feel free to contact authors: Wassim Hamidouche (whamidouche[at]gmail.com), Sid Ahmed Fezza (sfezza[at]ensttic.dz), Taieb Chachou (taieb.chachou[at]gmail.com), Ghalem Belalem (ghalem1dz[at]gmail.com)</h6>
+	<div class="cont"> If you have any questions about the project, please feel free to contact authors: Wassim Hamidouche (whamidouche[at]gmail.com), Sid Ahmed Fezza (sfezza[at]ensttic.dz), Taieb Chachou (taieb.chachou[at]gmail.com), Ghalem Belalem (ghalem1dz[at]gmail.com)</div>
      <div class="container">
     <div class="footer_bottom"><span>Copyright © reserved,    developed by <a href="http://webthemez.com">Taieb Chachou</a>. </span> </div>
   </div>
