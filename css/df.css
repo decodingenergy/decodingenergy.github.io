@@ -1,12 +1,141 @@
+
+.titledownload7{
+
+display: block;
+background: #fff;
+position: static;
+color: rgba(33,33,33,1);
+line-height: 32px;
+font-size: 15px;
+font-family: 'Lato', sans-serif;
+font-weight: normal;
+text-align: justify;
+
+padding-left: 130px;
+padding-right: 130px;
+padding-bottom: 26px;
+
+}
+
+p3 {
+  color: #020202;
+  font-family: courier;
+  line-height: 0px;
+  font-size: 15px;
+  
+  
+}
+p8{
+width: 100px;
+display: block;
+
+}
+.h9 {
+font-size: 15px;
+color: #181313;
+font-family: 'Open Sans', sans-serif;
+padding-left: 130px;
+padding-right: 130px;
+padding-bottom: 30px;
+font-weight: bold;
+text-align: left;
+
+}
+
+.ht9 {
+font-size: 15px;
+color: #181313;
+font-family: 'Open Sans', sans-serif;
+padding-left: 130px;
+padding-right: 130px;
+padding-bottom: 40px;
+text-align: left;
+
+}
+
+.table1 {
+
+font-size: 15px;
+color: #181313;
+font-family: 'Open Sans', sans-serif;
+font-weight: 500;
+text-align: left;
+padding-left: 130px;
+padding-right: 130px;
+
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f9f7f7;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #000;
+  color: #FEE16F;
+}
+
+
 .landClass, .absClass {
     display: none;
   
 }
+.cont{
+  font-size: 14px;
+  color: #888888;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 398;
+  text-align: center;
+  margin: 0px 0 25px 146px;
+  width: 1110px;
+}
 
+
+.container {
+  width: 1365px;
+}
+.col-md-3 {
+  width: 339px;
+  padding-left: ;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 150px;
+}
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .imgs {
 display: none;
-width: 460px;
-height: 420px;
+width: 416px;
+height: 388px;
+padding-left: 23px;
+padding-top: 30px;
+}
+
+.imgs1 {
+display: none;
+width: 416px;
+width: 441px;
+height: 333px;
 padding-left: 23px;
 padding-top: 30px;
 }
@@ -18,7 +147,7 @@ padding-top: 30px;
 }
 
 .container {
-  overflow: unset;
+  overflow: hidden;
 }
 
 .filterDiv {
@@ -31,11 +160,6 @@ padding-top: 30px;
 .show {
   display: block;
 }
-
-.show2 {
-  display: block;
-}
-
 
 /* Style the buttons */
 .btn1 {
@@ -62,69 +186,71 @@ text-decoration: none;
 border: #000000 solid 1px;
 }
 
-/* Style the buttons */
-.btn2 {
-  border: #C2C2C2 solid 1px;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #fff;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 
-.btn2:hover {
-  background: #000000;
-color: #FEE16F;
-text-decoration: none;
-border: #000000 solid 1px;
-}
-/* Add a dark background to the active button */
-.btn2.active3 {
-  background: #000000;
-color: #FEE16F;
-text-decoration: none;
-border: #000000 solid 1px;
-}
+.imgres{
+width: 1298px;
+width: 1341px;
+margin: auto;
 
-/* Style the buttons */
-.btn3 {
-  border: #C2C2C2 solid 1px;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #fff;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
-.btn3:hover {
-  background: #000000;
-color: #FEE16F;
-text-decoration: none;
-border: #000000 solid 1px;
-}
-/* Add a dark background to the active button */
-.btn3.active4 {
-  background: #000000;
-color: #FEE16F;
-text-decoration: none;
-border: #000000 solid 1px;
-}
-
-
 .centerbtn{
 margin: auto;
-width: 21%;
 
 }
 
 .box {
-padding-top : 28px;
-margin: auto;
-width: 26%;
-padding-bottom : 15px;
+padding-top : 13px;
+padding-left: 582px;
+padding-right: 164px;
+padding-bottom : 30px;
 }
 
+.fast{
+border: 1px solid;
+width: 323px;
+height: 110px;
+padding-left: 20px;
+padding-top: 10px;
+position: absolute;
+
+}
+
+
+
+.slow{
+
+border: 1px solid;
+width: 323px;
+height: 110px;
+padding-left: 20px;
+padding-top: 10px;
+position: absolute;
+margin-left: 350px;
+}
+
+.all{
+
+border: 1px solid;
+width: 323px;
+height: 110px;
+padding-left: 20px;
+padding-top: 10px;
+position: relative;
+margin-left: 700px;
+}
+
+.txt1{
+padding-left: 83px;
+padding-bottom: 10px;
+font-size: 16px;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 .selcss { 
 width: 200px;
@@ -142,6 +268,9 @@ border: #000000 solid 1px;
 .txt{
 color : #000000;
 font-size: 15px;
+
+margin-left: -26px;
+margin-top: 42px;
 }
 
 

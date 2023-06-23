@@ -29,7 +29,7 @@ img {
 }
 
 .active.item {
-  height: 600px;
+  height: 500px;
   width: 100%;
 
   background:url('../img/encoding energy co2.jpg');
@@ -42,21 +42,21 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 600px;	;
+    height: 500px;	;
 }
 
 .title {
 
 
 position: absolute;
-top: 25%;
+top: 136px;
   right: 0;
   padding: 25px; 
   padding-left: 25px; 
   left: 0;
 	color: #ffffff;
        line-height: 80px;
-       font-size: 55px;
+       font-size: 42px;
 	font-family: 'arial', sans-serif;
 	font-weight: normal;
 	text-align: center;
@@ -78,7 +78,7 @@ padding-left: 25px;
 left: 0;
 
 line-height: 80px;
-font-size: 40px;
+font-size: 31px;
 font-family: 'arial', sans-serif;
 font-weight: normal;
 text-align: center;
@@ -87,12 +87,12 @@ text-transform: 'full-size-kana';
 }
 .discription{
 display: block;
-padding: 25px 250px 50px;
+padding: 20px 94px 50px;
 background: #fff;
 position: static;
 color: rgba(33,33,33,1);
 line-height: 40px;
-font-size: 25px;
+font-size: 19px;
 font-family: 'Lato', sans-serif;
 font-weight: normal;
 text-align: center;
@@ -363,7 +363,7 @@ h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin: 0 0 60px 0;
+    margin: 0 0 51px 0;
 }
 
 p {
@@ -688,15 +688,15 @@ div#main-nav {
 position: absolute;
 
 
-font-size: 38px;
+font-size: 31px;
 
 font-family: 'Raleway', sans-serif;
 font-weight: normal;
-margin: 0px 0 25px 0;
+margin: 0px 0 0px 0;
 text-align: center;
 text-transform: uppercase;
 	color: #ffffff;
-        width: 1500px;
+        width: 1400px;
 }
 .titleseviceh6 {
 display: block;
@@ -706,8 +706,8 @@ color: #ffffff;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 text-align: center;
- width: 1500px;
-padding: 80px;
+ width: 1400px;
+padding-top: 73px;
 }
 
 
@@ -753,8 +753,8 @@ padding: 80px;
 .service_icon span {
     background: transparent; 
     display: block;
-    height: 95px;
-    width: 95px;
+    height: 90px;
+    width: 90px;
 	
     border: 1px solid #FFFFFF;
     border-radius: 50%;
@@ -763,7 +763,7 @@ padding: 80px;
 
 .service_icon i {
   color: #FEE16F;
-font-size: 40px;
+font-size: 36px;
 margin-top: 0;
 position: relative;
 top: 20px;
@@ -775,7 +775,7 @@ text-align: center;
 .service_block h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
 margin: 35px 0 15px; 
 }
@@ -783,7 +783,7 @@ margin: 35px 0 15px;
 color:#fff;
 }
 .service_block p {
-    font-size: 16px;
+    font-size: 15px;
     color: #A5A5A5;
     margin: 0 0 35px 0; 
 }
@@ -794,19 +794,19 @@ color:#fff;
 /* Latest Work
 ---------------------------------*/
 #download{}
-
+#results{}
 .titledownload {
 padding: 55px 0 0 0;
 color: #222222;
 font-family: 'Raleway', sans-serif;
-font-size: 34px;
+font-size: 31px;
 letter-spacing: -1px;
-margin: 0 0 15px;
+margin: 0 0 40px;
 text-align: center;
 text-transform: uppercase;
 }
 
- .titledownload6{font-size: 16px;
+ .titledownload6{font-size: 15px;
   color: #181313;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -926,10 +926,18 @@ margin-top: 50px;
 
 }
 
-
-.showresults {
+.showresults1 {
 margin: auto;
 width: 85%;
+padding-bottom: 50px;
+}
+.showresults0 {
+margin: auto;
+width: 85%;
+padding-bottom: 50px;
+}
+.showresults {
+margin: auto;
 padding-bottom: 50px;
 }
 .figure1{
@@ -988,6 +996,8 @@ padding-left : 10px;
     display: block;
     margin: 0 0 20px 0;
 }
+
+
 
 a.contact_btn {
     background: #fff;
@@ -1429,13 +1439,13 @@ transition: all .3s;
 }
  
 .contact_section {
-    margin: 0 0 60px 0;
+    margin: 0 0 0 0;
 }
 
 .contact_section h2 {
-    font-size: 40px;
+    font-size: 36px;
     color: #ffffff;
-    margin: 0 0 50px 0;
+    margin: 0 0 47px 0;
     text-transform: uppercase;
 }
 
