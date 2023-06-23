@@ -1,0 +1,734 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<title>Encoding energy and CO2 emissions</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/df1.js"></script>
+<link href="css/df.css" rel="stylesheet" type="text/css">
+
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ 
+</head>
+<body>
+
+<section id="home">   
+<div class="active item">
+	<div class="backhead"> 
+       </div> 
+       <div class="title"> 		 
+         
+         Energy Consumption and Carbon Footprint of Modern Video <br/> Decoding Software
+       </div>
+       
+</div>
+</section>
+
+ 
+ 
+
+<!--Header_section-->
+<header id="header_wrapper">
+  <div class="container">
+    <div class="header_box">
+      <!--<div class="logo"><a href="#">Resume</a></div>-->
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+			  <li><a href="#project" class="scroll-link">Project</a></li>
+			  <li><a href="#download" class="scroll-link">Dataset</a></li>
+			  <li><a href="#results" class="scroll-link">Results</a></li> 
+			  <li><a href="#contact" class="scroll-link">Contact</a></li>
+			</ul>
+      </div>
+	 </nav>
+    </div>
+  </div>
+</header>
+<!--Header_section--> 
+
+<section id="project">
+<div class="projecttitle">
+    Energy Consumption and Carbon Footprint of Modern Video Decoding Software
+</div>
+<div class="discription">
+In this project,  we provide a comparative study between five leading video coding standards, namely H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1 through their fast software decoder implementation h264, hevc, VVdeC, vp9 and libdav1d, respectively, in terms of energy consumption and CO2 emissions. This study provides a better understanding of the trade-off between energy consumption, bitrate, and quality of different decoders and determines which is the most suitable for developing a green and sustainable video streaming solution.
+</div>
+ 
+</section>
+<!--Aboutus--> 
+
+
+<!--Service-->
+<section  id="service">
+  <div class="backheadservice"> 
+  </div>
+  <div class="container">
+  <div class="titlesevice">
+    Evaluation System
+   </div>
+   <div  class="titleseviceh6" >The evaluation of video decoders goes through four steps</div>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-md-3">
+		<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-film"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">1. Original dataset</h3>
+            <p class="animated fadeInDown wow">We selected the JVET-CTC dataset.</p>
+          </div>
+        </div>
+        <div class="col-md-3"> 
+		<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-database"></i></span> </div> 
+		<div class="service_block">
+            <h3 class="animated fadeInUp wow">2. Video decoding</h3>
+            <p class="animated fadeInDown wow">We decoded the encoded JVET-CTC dataset by using five decoders, </br> namely H.264/AVC, H.265/HEVC, H.266/VVC, VP9, and AV1  </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-lightbulb-o"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">3. Evaluation metrics</h3>
+            <p class="animated fadeInDown wow"> We measured decoding time, energy
+consumption, CO2 emissions, CPU and memory
+usage percentage, quality using PSNR, SSIM and VMAF metrics. </p>
+          </div>
+        </div>
+		  <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-bar-chart"></i></span> </div>
+          <div class="service_block">
+            
+            <h3 class="animated fadeInUp wow">4. Results and analysis</h3>
+            <p class="animated fadeInDown wow"> We provide an in-depth analyzis of the pros and cons of five open-source software video decoders.</p>
+          </div>
+        </div>
+      </div> 
+	 
+    </div>
+  </div>
+  
+</section>
+<!--Service-->  
+
+<!--Service-->  
+
+<section  id="download">
+  <div class="containerdowload">
+  <div class="titledownload">
+   Used Hardware
+  </div>
+  
+  
+   <div  class="titledownload7" > <b> Characteristics of the Used Hardware :</b> The decoding process was performed   on a workstation comprising an Intel(R) Xeon(R) W-2125 with a 4 Core CPU running at 4.00 GHz with four DDR4 RAM modules, each one with a size of 16 GB on Ubuntu 20.04.5 LTS operating system (OS). The processor supports a wide range of \ac{simd}, including SSE4.2, AVX, AVX2, and AVX-512. All five decoders rely heavily on assembly and intrinsic to take advantage of low-level CPU and \ac{simd} instructions (SSE, AVX, AVX-512), which help speed up the decoding process. We used the default configuration of h264, hevc, vp9, and libdav1d decoders provided with the FFmpeg library version 5.2. The proper SSE/AVX optimizations were enabled at run time according to the instructions supported by the CPU. For VVdeC, we also compiled the encoder with the default configuration provided by the project Github through CMake.
+   </div>
+   
+   
+ </div>
+	</div>
+	
+    </div>
+  </div>
+  </div>
+</section>
+ 
+
+
+
+<!--Service-->
+<section  id="download">
+	
+<div class="line">
+  </div>
+  <div class="containerdowload">
+  <div class="titledownload">
+    downlod dataset
+  </div>
+   <div  class="titledownload6" >   
+   The whole encoded dataset can be shared upon request. Please, send an email to taieb.chachou[at]gmail.com with Cc sfezza[at]ensttic.dz.</div>
+   
+ </div>
+	</div>
+	
+    </div>
+  </div>
+  </div>
+</section>
+<!--Service-->  
+
+<!-- Portfolio -->
+<section id="results" class="content"> 
+  <!-- Container -->
+  <div class="line">
+  </div>
+  
+  <div class="container portfolio_title">
+	  
+	  
+    <!-- Title -->
+    <div class="titledownload">
+    Results & analysis
+  </div>
+    
+    <!--/Title --> 
+    
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Portfolio Filters -->
+  <div class="portfolio"> 
+  
+  
+  
+  
+</div>
+  
+    
+
+    <!--/Portfolio Filters --> 
+    
+    <!-- Portfolio Wrapper -->
+    <div class = "showresults">
+       
+  
+	    
+<div class="container box">
+    
+   <div class = "centerbtn", id="myBtnContainer">
+ 
+  <button class="btn1 active2" onclick="filterSelection('dataset_decod')"> Dataset</button>
+  <button class="btn1" onclick="filterSelection('resolution_decod')"> Resolution</button>
+  <button class="btn1" onclick="filterSelection('class_decod')"> Class</button>
+
+
+ 
+ 
+</div>    
+  	
+
+  <div class="filterDiv dataset_decod show">  
+  		 <p class = "txt">Show results by :  <select class = "selcss">
+  		 <option value="" > --Please choose an option-- </option>
+	    	<option  value="dec_dataset" >All JVET CTC dataset</option>
+		<option value="dec_ArenaOfValor" /> ArenaOfValor<br />
+	    	<option  value="dec_BQMall" /> BQMall<br />
+	    	<option  value="dec_BQSquare" /> BQSquare<br />
+	    	<option  value="dec_BQTerrace" /> BQTerrace<br />
+	    	<option  value="dec_BasketballDrillText" /> BasketballDrillText<br />
+	    	<option  value="dec_BasketballDrill" /> BasketballDrill<br />
+	    	<option  value="dec_BasketballDrive" /> BasketballDrive<br />
+	    	<option  value="dec_BasketballPass" /> BasketballPass<br />
+	    	<option  value="dec_BlowingBubbles" /> BlowingBubbles<br />
+	    	<option value="dec_Cactus" /> Cactus<br />
+	    	<option  value="dec_Campfire" /> Campfire<br />
+	    	<option  value="dec_CatRobot" /> CatRobot<br />
+	    	<option  value="dec_DaylightRoad2" /> DaylightRoad2<br />
+	    	<option  value="dec_FoodMarket4" /> FoodMarket4<br />
+	    	<option value="dec_FourPeople" /> FourPeople<br />
+	    	<option value="dec_KristenAndSara" /> KristenAndSara<br />
+		<option value="dec_Johnny" /> Johnny<br />
+	    	<option  value="dec_MarketPlace" /> MarketPlace<br />
+	    	<option  value="dec_ParkRunning3" /> ParkRunning3<br />
+	    	<option  value="dec_PartyScene" /> PartyScene<br />
+	    	<option  value="dec_RaceHorses" /> RaceHorses<br />
+	    	<option value="dec_RaceHorses_480" /> RaceHorses_480<br />
+	    	<option  value="dec_RitualDance" /> RitualDance<br />
+	    	<option  value="dec_SlideEditing" /> SlideEditing<br />
+	    	<option value="dec_SlideShow" /> SlideShow<br />
+	    	<option  value="dec_RaceHorses_480" /> RaceHorses_480<br />
+	    	<option  value="dec_Tango2" /> Tango2<br />
+		</select></p></div>
+  <div class="filterDiv resolution_decod"> 
+  		<p class = "txt">Show results by :  <select  class = "selcss">
+  		<option value="" >--Please choose an option--</option>
+	    	<option  value="resolution" >All resolutions</option>
+		<option value="dec_416x240" /> 416x240<br />
+	    	<option value="dec_832x480" /> 832x480<br />
+	    	<option value="dec_1280x720" /> 1280x720<br />
+	    	<option value="dec_1920x1080" /> 1920x1080<br />
+	    	<option value="dec_3840x2160" /> 3840x2160<br />
+		</select></p></div>
+  <div class="filterDiv class_decod">
+  		<p class = "txt">Show results by :  <select  class = "selcss">
+  		<option value="" >--Please choose an option--</option>
+	    	<option value="dec_class" >All classes</option>
+		<option value="dec_A1" /> Class A1<br />
+	    	<option value="dec_A2" /> Class A2<br />
+	    	<option value="dec_B" /> Class B<br />
+	    	<option value="dec_C" /> Class C<br />
+	    	<option value="dec_D" /> Class D<br />
+	    	<option value="dec_E" /> Class E<br />
+	    	<option value="dec_F" /> Class F<br />	    	
+		</select></p></div>
+		
+	
+</div>
+
+
+<!--********************************* decoding results *****************************--> 
+<!--********************************* decoding results *****************************--> 
+<div  class="imgres">
+
+<img src="img/results/decoding_results/decoding_Bar_A1.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A2.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_B.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_Bar_C.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_Bar_D.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_Bar_E.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_Bar_F.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_Bar_416x240.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_832x480.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1280x720.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1920x1080.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_3840x2160.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_line_A1_Decoding time (s).jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_line_A2_Decoding time (s).jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_line_B_Decoding time (s).jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_line_C_Decoding time (s).jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_line_D_Decoding time (s).jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_line_E_Decoding time (s).jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_line_F_Decoding time (s).jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_line_416x240_Decoding time (s).jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_line_832x480_Decoding time (s).jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_line_1280x720_Decoding time (s).jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_line_1920x1080_Decoding time (s).jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_line_3840x2160_Decoding time (s).jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_416x240_co2.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_832x480_co2.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1280x720_co2.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1920x1080_co2.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_3840x2160_co2.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_416x240_energy.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_416x240_dist.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_832x480_energy.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_832x480_dist.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1280x720_energy.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1280x720_dist.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1920x1080_energy.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_1920x1080_dist.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_3840x2160_energy.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_3840x2160_dist.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A1_energy.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A1_dist.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A2_energy.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A2_dist.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_B_energy.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_Bar_B_dist.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_Bar_C_energy.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_Bar_C_dist.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_Bar_D_energy.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_Bar_D_dist.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_Bar_E_energy.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_Bar_E_dist.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_Bar_F_energy.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_Bar_F_dist.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A1_co2.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_A2_co2.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_Bar_B_co2.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_Bar_C_co2.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_Bar_D_co2.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_Bar_E_co2.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_Bar_F_co2.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_Bar_class_energy.jpg" class="dec_class imgs" />
+<img src="img/results/decoding_results/decoding_Bar_class_co2.jpg" class="dec_class imgs" />
+<img src="img/results/decoding_results/decoding_Bar_class_dist.jpg" class="dec_class imgs" />
+<img src="img/results/decoding_results/decoding_Bar_resolution_energy.jpg" class="dec_resolution imgs" />
+<img src="img/results/decoding_results/decoding_Bar_resolution_dist.jpg" class="dec_resolution imgs" />
+<img src="img/results/decoding_results/decoding_Bar_resolution_co2.jpg" class="dec_resolution imgs" />
+<img src="img/results/decoding_results/decoding_bar_BQSquare.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_bar_BasketballPass.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_bar_BlowingBubbles.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_bar_RaceHorses.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_bar_BQMall.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_bar_BasketballDrillText.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_bar_BasketballDrill.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_bar_PartyScene.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_bar_RaceHorses_480.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_bar_FourPeople.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_bar_Johnny.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_bar_KristenAndSara.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_bar_SlideEditing.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_bar_SlideShow.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_bar_ArenaOfValor.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_bar_MarketPlace.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_bar_BQTerrace.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_bar_RitualDance.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_bar_BasketballDrive.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_bar_Cactus.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_bar_Tango2.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_bar_CatRobot.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_bar_DaylightRoad2.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_bar_FoodMarket4.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_bar_ParkRunning3.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_bar_Campfire.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_bar_cpu_memory_time.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_Bar_dataset.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_line_A1_PSNR.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_line_A2_PSNR.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_line_B_PSNR.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_line_C_PSNR.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_line_D_PSNR.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_line_E_PSNR.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_line_F_PSNR.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_line_A1_SSIM.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_line_A2_SSIM.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_line_B_SSIM.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_line_C_SSIM.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_line_D_SSIM.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_line_E_SSIM.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_line_F_SSIM.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_line_A1_VMAF.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_line_A2_VMAF.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_line_B_VMAF.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_line_C_VMAF.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_line_D_VMAF.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_line_E_VMAF.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_line_F_VMAF.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_line_416x240_PSNR.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_line_832x480_PSNR.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_line_1280x720_PSNR.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_line_1920x1080_PSNR.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_line_3840x2160_PSNR.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_line_416x240_SSIM.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_line_832x480_SSIM.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_line_1280x720_SSIM.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_line_1920x1080_SSIM.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_line_3840x2160_SSIM.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_line_416x240_VMAF.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_line_832x480_VMAF.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_line_1280x720_VMAF.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_line_1920x1080_VMAF.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_line_3840x2160_VMAF.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_line_ArenaOfValor_Decoding time (s).jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_line_BQMall_Decoding time (s).jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_line_BQSquare_Decoding time (s).jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_line_BQTerrace_Decoding time (s).jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrillText_Decoding time (s).jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrill_Decoding time (s).jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrive_Decoding time (s).jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballPass_Decoding time (s).jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_line_BlowingBubbles_Decoding time (s).jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_line_Cactus_Decoding time (s).jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_line_Campfire_Decoding time (s).jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_line_CatRobot_Decoding time (s).jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_line_DaylightRoad2_Decoding time (s).jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_line_FoodMarket4_Decoding time (s).jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_line_FourPeople_Decoding time (s).jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_line_Johnny_Decoding time (s).jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_line_KristenAndSara_Decoding time (s).jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_line_MarketPlace_Decoding time (s).jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_line_ParkRunning3_Decoding time (s).jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_line_PartyScene_Decoding time (s).jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_Decoding time (s).jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_480_Decoding time (s).jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_line_RitualDance_Decoding time (s).jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideEditing_Decoding time (s).jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideShow_Decoding time (s).jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_line_Tango2_Decoding time (s).jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/line_white.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_line_ArenaOfValor_PSNR.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_line_BQMall_PSNR.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_line_BQSquare_PSNR.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_line_BQTerrace_PSNR.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrillText_PSNR.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrill_PSNR.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrive_PSNR.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballPass_PSNR.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_line_BlowingBubbles_PSNR.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_line_Cactus_PSNR.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_line_Campfire_PSNR.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_line_CatRobot_PSNR.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_line_DaylightRoad2_PSNR.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_line_FoodMarket4_PSNR.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_line_FourPeople_PSNR.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_line_Johnny_PSNR.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_line_KristenAndSara_PSNR.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_line_MarketPlace_PSNR.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_line_ParkRunning3_PSNR.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_line_PartyScene_PSNR.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_PSNR.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_480_PSNR.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_line_RitualDance_PSNR.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideEditing_PSNR.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideShow_PSNR.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_line_Tango2_PSNR.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_line_ArenaOfValor_SSIM.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_line_BQMall_SSIM.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_line_BQSquare_SSIM.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_line_BQTerrace_SSIM.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrillText_SSIM.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrill_SSIM.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrive_SSIM.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballPass_SSIM.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_line_BlowingBubbles_SSIM.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_line_Cactus_SSIM.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_line_Campfire_SSIM.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_line_CatRobot_SSIM.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_line_DaylightRoad2_SSIM.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_line_FoodMarket4_SSIM.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_line_FourPeople_SSIM.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_line_Johnny_SSIM.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_line_KristenAndSara_SSIM.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_line_MarketPlace_SSIM.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_line_ParkRunning3_SSIM.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_line_PartyScene_SSIM.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_SSIM.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_480_SSIM.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_line_RitualDance_SSIM.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideEditing_SSIM.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideShow_SSIM.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_line_Tango2_SSIM.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_line_ArenaOfValor_VMAF.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_line_BQMall_VMAF.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_line_BQSquare_VMAF.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_line_BQTerrace_VMAF.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrillText_VMAF.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrill_VMAF.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballDrive_VMAF.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_line_BasketballPass_VMAF.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_line_BlowingBubbles_VMAF.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_line_Cactus_VMAF.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_line_Campfire_VMAF.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_line_CatRobot_VMAF.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_line_DaylightRoad2_VMAF.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_line_FoodMarket4_VMAF.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_line_FourPeople_VMAF.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_line_Johnny_VMAF.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_line_KristenAndSara_VMAF.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_line_MarketPlace_VMAF.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_line_ParkRunning3_VMAF.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_line_PartyScene_VMAF.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_VMAF.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_line_RaceHorses_480_VMAF.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_line_RitualDance_VMAF.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideEditing_VMAF.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_line_SlideShow_VMAF.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_line_Tango2_VMAF.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_line_dataset Decoding time (s).jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_line_dataset PSNR.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_line_dataset SSIM.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_line_dataset VMAF.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_dataset_BD rate (PSNR)_relative_decoding time.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_A1_BD rate (PSNR)_relative_decoding time.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_A2_BD rate (PSNR)_relative_decoding time.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_B_BD rate (PSNR)_relative_decoding time.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_C_BD rate (PSNR)_relative_decoding time.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_D_BD rate (PSNR)_relative_decoding time.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_E_BD rate (PSNR)_relative_decoding time.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_F_BD rate (PSNR)_relative_decoding time.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_A1_BD rate (SSIM)_relative_decoding time.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_A2_BD rate (SSIM)_relative_decoding time.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_B_BD rate (SSIM)_relative_decoding time.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_C_BD rate (SSIM)_relative_decoding time.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_D_BD rate (SSIM)_relative_decoding time.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_E_BD rate (SSIM)_relative_decoding time.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_F_BD rate (SSIM)_relative_decoding time.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_A1_BD rate (VMAF)_relative_decoding time.jpg" class="dec_A1 imgs" />
+<img src="img/results/decoding_results/decoding_A2_BD rate (VMAF)_relative_decoding time.jpg" class="dec_A2 imgs" />
+<img src="img/results/decoding_results/decoding_B_BD rate (VMAF)_relative_decoding time.jpg" class="dec_B imgs" />
+<img src="img/results/decoding_results/decoding_C_BD rate (VMAF)_relative_decoding time.jpg" class="dec_C imgs" />
+<img src="img/results/decoding_results/decoding_D_BD rate (VMAF)_relative_decoding time.jpg" class="dec_D imgs" />
+<img src="img/results/decoding_results/decoding_E_BD rate (VMAF)_relative_decoding time.jpg" class="dec_E imgs" />
+<img src="img/results/decoding_results/decoding_F_BD rate (VMAF)_relative_decoding time.jpg" class="dec_F imgs" />
+<img src="img/results/decoding_results/decoding_416x240_BD rate (PSNR)_relative_decoding time.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_832x480_BD rate (PSNR)_relative_decoding time.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_1280x720_BD rate (PSNR)_relative_decoding time.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_1920x1080_BD rate (PSNR)_relative_decoding time.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_3840x2160_BD rate (PSNR)_relative_decoding time.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_416x240_BD rate (SSIM)_relative_decoding time.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_832x480_BD rate (SSIM)_relative_decoding time.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_1280x720_BD rate (SSIM)_relative_decoding time.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_1920x1080_BD rate (SSIM)_relative_decoding time.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_3840x2160_BD rate (SSIM)_relative_decoding time.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_416x240_BD rate (VMAF)_relative_decoding time.jpg" class="dec_416x240 imgs" />
+<img src="img/results/decoding_results/decoding_832x480_BD rate (VMAF)_relative_decoding time.jpg" class="dec_832x480 imgs" />
+<img src="img/results/decoding_results/decoding_1280x720_BD rate (VMAF)_relative_decoding time.jpg" class="dec_1280x720 imgs" />
+<img src="img/results/decoding_results/decoding_1920x1080_BD rate (VMAF)_relative_decoding time.jpg" class="dec_1920x1080 imgs" />
+<img src="img/results/decoding_results/decoding_3840x2160_BD rate (VMAF)_relative_decoding time.jpg" class="dec_3840x2160 imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQSquare_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballPass_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_Point_BlowingBubbles_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_BD rate(PSNR)_relative_decoding time.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQMall_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrillText_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrill_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_Point_PartyScene_BD rate(PSNR)_relative_decoding time.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_480_BD rate(PSNR)_relative_decoding time.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FourPeople_BD rate(PSNR)_relative_decoding time.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_Point_Johnny_BD rate(PSNR)_relative_decoding time.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_Point_KristenAndSara_BD rate(PSNR)_relative_decoding time.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_Point_SlideEditing_BD rate(PSNR)_relative_decoding time.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_Point_SlideShow_BD rate(PSNR)_relative_decoding time.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_Point_ArenaOfValor_BD rate(PSNR)_relative_decoding time.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_Point_MarketPlace_BD rate(PSNR)_relative_decoding time.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQTerrace_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_Point_RitualDance_BD rate(PSNR)_relative_decoding time.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrive_BD rate(PSNR)_relative_decoding time.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_Point_Cactus_BD rate(PSNR)_relative_decoding time.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_Point_Tango2_BD rate(PSNR)_relative_decoding time.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_CatRobot_BD rate(PSNR)_relative_decoding time.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_Point_DaylightRoad2_BD rate(PSNR)_relative_decoding time.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FoodMarket4_BD rate(PSNR)_relative_decoding time.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_Point_ParkRunning3_BD rate(PSNR)_relative_decoding time.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_Point_Campfire_BD rate(PSNR)_relative_decoding time.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQSquare_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballPass_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_Point_BlowingBubbles_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_BD rate(SSIM)_relative_decoding time.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQMall_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrillText_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrill_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_Point_PartyScene_BD rate(SSIM)_relative_decoding time.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_480_BD rate(SSIM)_relative_decoding time.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FourPeople_BD rate(SSIM)_relative_decoding time.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_Point_Johnny_BD rate(SSIM)_relative_decoding time.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_Point_KristenAndSara_BD rate(SSIM)_relative_decoding time.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_Point_SlideEditing_BD rate(SSIM)_relative_decoding time.jpg" class="dec_SlideEditing imgs" />
+	    
+<img src="img/results/decoding_results/decoding_Point_SlideShow_BD rate(SSIM)_relative_decoding time.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_Point_ArenaOfValor_BD rate(SSIM)_relative_decoding time.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_Point_MarketPlace_BD rate(SSIM)_relative_decoding time.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQTerrace_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_Point_RitualDance_BD rate(SSIM)_relative_decoding time.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrive_BD rate(SSIM)_relative_decoding time.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_Point_Cactus_BD rate(SSIM)_relative_decoding time.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_Point_Tango2_BD rate(SSIM)_relative_decoding time.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_CatRobot_BD rate(SSIM)_relative_decoding time.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_Point_DaylightRoad2_BD rate(SSIM)_relative_decoding time.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FoodMarket4_BD rate(SSIM)_relative_decoding time.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_Point_ParkRunning3_BD rate(SSIM)_relative_decoding time.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_Point_Campfire_BD rate(SSIM)_relative_decoding time.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQSquare_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BQSquare imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballPass_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BasketballPass imgs" />
+<img src="img/results/decoding_results/decoding_Point_BlowingBubbles_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BlowingBubbles imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_BD rate(VMAF)_relative_decoding time.jpg" class="dec_RaceHorses imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQMall_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BQMall imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrillText_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BasketballDrillText imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrill_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BasketballDrill imgs" />
+<img src="img/results/decoding_results/decoding_Point_PartyScene_BD rate(VMAF)_relative_decoding time.jpg" class="dec_PartyScene imgs" />
+<img src="img/results/decoding_results/decoding_Point_RaceHorses_480_BD rate(VMAF)_relative_decoding time.jpg" class="dec_RaceHorses_480 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FourPeople_BD rate(VMAF)_relative_decoding time.jpg" class="dec_FourPeople imgs" />
+<img src="img/results/decoding_results/decoding_Point_Johnny_BD rate(VMAF)_relative_decoding time.jpg" class="dec_Johnny imgs" />
+<img src="img/results/decoding_results/decoding_Point_KristenAndSara_BD rate(VMAF)_relative_decoding time.jpg" class="dec_KristenAndSara imgs" />
+<img src="img/results/decoding_results/decoding_Point_SlideEditing_BD rate(VMAF)_relative_decoding time.jpg" class="dec_SlideEditing imgs" />
+<img src="img/results/decoding_results/decoding_Point_SlideShow_BD rate(VMAF)_relative_decoding time.jpg" class="dec_SlideShow imgs" />
+<img src="img/results/decoding_results/decoding_Point_ArenaOfValor_BD rate(VMAF)_relative_decoding time.jpg" class="dec_ArenaOfValor imgs" />
+<img src="img/results/decoding_results/decoding_Point_MarketPlace_BD rate(VMAF)_relative_decoding time.jpg" class="dec_MarketPlace imgs" />
+<img src="img/results/decoding_results/decoding_Point_BQTerrace_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BQTerrace imgs" />
+<img src="img/results/decoding_results/decoding_Point_RitualDance_BD rate(VMAF)_relative_decoding time.jpg" class="dec_RitualDance imgs" />
+<img src="img/results/decoding_results/decoding_Point_BasketballDrive_BD rate(VMAF)_relative_decoding time.jpg" class="dec_BasketballDrive imgs" />
+<img src="img/results/decoding_results/decoding_Point_Cactus_BD rate(VMAF)_relative_decoding time.jpg" class="dec_Cactus imgs" />
+<img src="img/results/decoding_results/decoding_Point_Tango2_BD rate(VMAF)_relative_decoding time.jpg" class="dec_Tango2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_CatRobot_BD rate(VMAF)_relative_decoding time.jpg" class="dec_CatRobot imgs" />
+<img src="img/results/decoding_results/decoding_Point_DaylightRoad2_BD rate(VMAF)_relative_decoding time.jpg" class="dec_DaylightRoad2 imgs" />
+<img src="img/results/decoding_results/decoding_Point_FoodMarket4_BD rate(VMAF)_relative_decoding time.jpg" class="dec_FoodMarket4 imgs" />
+<img src="img/results/decoding_results/decoding_Point_ParkRunning3_BD rate(VMAF)_relative_decoding time.jpg" class="dec_ParkRunning3 imgs" />
+<img src="img/results/decoding_results/decoding_Point_Campfire_BD rate(VMAF)_relative_decoding time.jpg" class="dec_Campfire imgs" />
+<img src="img/results/decoding_results/decoding_dataset_BD rate (SSIM)_relative_decoding time.jpg" class="dec_dataset imgs" />
+<img src="img/results/decoding_results/decoding_dataset_BD rate (VMAF)_relative_decoding time.jpg" class="dec_dataset imgs" />
+    
+    
+
+
+</div>
+    <!--/Portfolio Wrapper --> 
+    
+  </div>
+  <!--/Portfolio Filters --> 
+
+<!--fffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaasssssssssssssssssssssstttttttttttttttttttteeeeeeeerrrrrrrrr--> 
+
+ 
+   
+  <div class="portfolio_btm"></div>
+  
+  
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+ 
+  
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2>Contact Us</h2>
+	<div class="cont"> If you have any questions about the project, please feel free to contact authors: Wassim Hamidouche (whamidouche[at]gmail.com), Sid Ahmed Fezza (sfezza[at]ensttic.dz), Taieb Chachou (taieb.chachou[at]gmail.com), Ghalem Belalem (ghalem1dz[at]gmail.com)</div>
+     <div class="container">
+    <div class="footer_bottom"><span>Copyright © reserved,    developed by <a href="http://webthemez.com">Taieb Chachou</a>. </span> </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
+
