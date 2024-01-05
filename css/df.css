@@ -17,6 +17,60 @@ padding-bottom: 26px;
 
 }
 
+
+.titledownload12{
+
+display: block;
+background: #fff;
+position: static;
+color: rgba(33,33,33,1);
+line-height: 32px;
+font-size: 15px;
+font-family: 'Lato', sans-serif;
+font-weight: normal;
+text-align: justify;
+padding-left: 150px;
+padding-right: 150px;
+
+}
+
+.titledownload11{
+
+display: block;
+background: #fff;
+position: static;
+color: rgba(33,33,33,1);
+line-height: 32px;
+font-size: 15px;
+font-family: 'Lato', sans-serif;
+font-weight: normal;
+text-align: justify;
+padding-left: 170px;
+padding-right: 170px;
+}
+
+
+.titledownload10{
+
+display: block;
+background: #fff;
+position: static;
+color: rgba(33,33,33,1);
+line-height: 27px;
+font-size: 15px;
+font-family: 'Lato', courier;
+font-weight: normal;
+text-align: justify;
+padding-left: 250px;
+padding-right: 210px;
+
+}
+
+ul.a {
+  list-style-type: disc;
+}
+
+
 p3 {
   color: #020202;
   font-family: courier;
