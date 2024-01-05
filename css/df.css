@@ -55,7 +55,7 @@ padding-right: 170px;
 display: block;
 background: #fff;
 position: static;
-color: rgba(33,33,33,1);
+color: rgba(0,0,0);
 line-height: 27px;
 font-size: 15px;
 font-family: 'Lato', courier;
@@ -63,6 +63,21 @@ font-weight: normal;
 text-align: justify;
 padding-left: 250px;
 padding-right: 210px;
+
+}
+.titledownload13{
+
+display: block;
+background: #fff;
+position: static;
+color: rgba(0,0,0);
+line-height: 27px;
+font-size: 15px;
+font-family: 'Lato', courier;
+font-weight: normal;
+text-align: justify;
+padding-left: 60px;
+padding-right: 0px;
 
 }
 
