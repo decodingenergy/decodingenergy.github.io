@@ -184,7 +184,9 @@ padding-right: 130px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 398;
   text-align: center;
-  margin: 0px 0 25px 146px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
   width: 100%;
 }
 
