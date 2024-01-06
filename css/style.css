@@ -696,7 +696,7 @@ margin: 0px 0 0px 0;
 text-align: center;
 text-transform: uppercase;
 	color: #ffffff;
-        width: 100%;
+        width: 1366px;
 }
 .titleseviceh6 {
 display: block;
@@ -706,7 +706,7 @@ color: #ffffff;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 text-align: center;
- width: 100%;
+ width: 1366px;
 padding-top: 73px;
 }
 
@@ -715,7 +715,7 @@ padding-top: 73px;
 #service {
     position: relative;
     padding: 60px 0px;
-    background: url('../img/system1.jpg') top left no-repeat !important;
+    background: url('../img/system1.jpg') top left !important;
 }
 #service h2{
   color: #fff;
