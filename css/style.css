@@ -83,7 +83,8 @@ font-family: 'arial', sans-serif;
 font-weight: normal;
 text-align: center;
 text-transform: 'full-size-kana';
-
+width: 1366px;
+  margin: auto;
 }
 .discription{
 display: block;
@@ -101,6 +102,8 @@ text-transform: 'full-size-kana';}
 a, a:hover, a:active {
     outline: 0px !important;
 	text-decoration:none;
+	width: 1366px;
+  margin: auto;
 }
 .clear {
     clear: both;
