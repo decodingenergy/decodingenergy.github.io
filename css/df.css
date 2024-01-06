@@ -185,12 +185,12 @@ padding-right: 130px;
   font-weight: 398;
   text-align: center;
   margin: 0px 0 25px 146px;
-  width: 1110px;
+  width: 100%;
 }
 
 
 .container {
-  width: 1365px;
+  width: 100%;
 }
 .col-md-3 {
   width: 339px;
@@ -273,8 +273,8 @@ border: #000000 solid 1px;
 
 
 .imgres{
-width: 1298px;
-width: 1341px;
+width: 100%;
+width: 100%;
 margin: auto;
 
 }
