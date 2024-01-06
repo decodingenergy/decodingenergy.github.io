@@ -696,7 +696,7 @@ margin: 0px 0 0px 0;
 text-align: center;
 text-transform: uppercase;
 	color: #ffffff;
-        width: 1400px;
+        width: 100%;
 }
 .titleseviceh6 {
 display: block;
@@ -706,7 +706,7 @@ color: #ffffff;
 font-family: 'Open Sans', sans-serif;
 font-weight: 400;
 text-align: center;
- width: 1400px;
+ width: 100%;
 padding-top: 73px;
 }
 
